@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('fonts/StoryScript-Regular.ttf') format('truetype');
+}
+a,p,h1,#h21{
+    font-family:truetype ;
+}
+a:hover{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.navbar {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.6); /* ظل خفيف أسفل النافبار */
+}
+#btn1{
+  background-color: #F7941D;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s;
+   box-shadow: 0 10px 15px rgba(0,0,0,0.8);
+}.menu-img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .menu-img {
+    max-height: 250px;
+    width: auto;
+  }
+}
+.cord:hover {
+  transform: scale(1.01);
+  transition: transform 0.4s;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+.cord{
+  width: 100%;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-top: 15px;
+  margin-bottom: 15px;
+
+
+   p{
+    font-size: 25px;
+   }
+   h3{
+    font-size: 18px;
+   }
+}
+#aboutus{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.ab_img{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+#book{
+border-radius: 20px;
+box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+}
+.submit{
+  width: 90%;
+  background-color: #F7941D;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif;
+}
+#book:hover{
+
+  box-shadow: 0 10px 13px rgba(0,0,0,0.5)}
+  .submit:hover{
+    box-shadow: 0 8px 13px rgba(0,0,0,0.5)
+  }
+ .btn1{
+  background-color: #F7941D;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.cord1:hover {
+  transform: scale(1.01);
+  transition: transform 0.4s;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+.cord1{
+  width: 100%;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-top: 15px;
+  margin-bottom: 15px;}
+  #subt{
+    
+     background-color: #F7941D;
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px;
+  font-family: 'Segoe UI', sans-serif
+  }
+  #subt:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+  #contact{
+    border-radius: 20px;
+ box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  }
+#a{
+  color: #F7941D !important;
+  text-decoration: none !important;
+}
+
+#contact:hover{
+    
+ box-shadow: 0 10px 15px rgba(0,0,0,0.7);
+  }
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zest - Order</title>
+  <link rel="stylesheet" href="css/css.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<script>
+$(document).ready(function(){
+  $("#ptn1").click(function(){
+   let p=23;
+    
+              let n=$("#num1").val();
+             let name="Spaghetti Carbonara";
+              let note=$("#note1").val();
+              let t=n*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n+"</td><td>"+p+"</td><td>"+t+"</td><td>"+note+"</td></tr>");
+         
+  });
+   $("#ptm2").click(function(){
+   let p=99;
+    
+              let n2=$("#num2").val();
+             let name="Margherita Pizza";
+              let note=$("#note2").val();
+              let t2=n2*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n2+"</td><td>"+p+"</td><td>"+t2+"</td><td>"+note+"</td></tr>");
+         
+  });
+  $("#ptm3").click(function(){
+   let p=71;
+    
+              let n3=$("#num3").val();
+             let name="Osso Buco";
+              let note=$("#note3").val();
+              let t3=n3*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n3+"</td><td>"+p+"</td><td>"+t3+"</td><td>"+note+"</td></tr>");
+         
+  });
+   $("#ptm4").click(function(){
+   let p=36;
+    
+              let n4=$("#num4").val();
+             let name="grain bowl";
+              let note=$("#note4").val();
+              let t4=n4*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n4+"</td><td>"+p+"</td><td>"+t4+"</td><td>"+note+"</td></tr>");
+         
+  });
+  $("#ptm5").click(function(){
+   let p=10;
+    
+              let n5=$("#num5").val();
+             let name="cobb salad";
+              let note=$("#note5").val();
+              let t5=n5*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n5+"</td><td>"+p+"</td><td>"+t5+"</td><td>"+note+"</td></tr>");
+         
+  });
+  $("#ptm6").click(function(){
+   let p=62;
+    
+              let n6=$("#num6").val();
+             let name="katsu";
+              let note=$("#note6").val();
+              let t6=n6*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n6+"</td><td>"+p+"</td><td>"+t6+"</td><td>"+note+"</td></tr>");
+         
+  });
+   $("#ptm7").click(function(){
+   let p=87;
+    
+              let n7=$("#num7").val();
+             let name="steak and fried rice";
+              let note=$("#note7").val();
+              let t7=n7*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n7+"</td><td>"+p+"</td><td>"+t7+"</td><td>"+note+"</td></tr>");
+         
+  });
+   $("#ptm8").click(function(){
+   let p=95;
+    
+              let n8=$("#num8").val();
+             let name="Arancini";
+              let note=$("#note8").val();
+              let t8=n8*p;
+               $("tbody").append("<tr><td>"+name+"</td><td>"+n8+"</td><td>"+p+"</td><td>"+t8+"</td><td>"+note+"</td></tr>");
+         
+  });
+
+});
+
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm  navbar-light fixed-top bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#">
+      <img src="imgs/logo.png" alt="Avatar Logo" style="width:70px;" class="rounded-pill"> 
+    </a>
+    </a>
+     <p style="color: #5c330a; font-size: 300%; font-family: inherit;">   </p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+         
+        <li class="nav-item">
+          <a style="font-size: 200%;color: #5c330a;" class="nav-link" href="home.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size: 200%;color: #5c330a;" class="nav-link" href="#aboutus">about us</a>
+        </li>
+        <li class="nav-item">
+          <a style="font-size: 200%;color: #5c330a;" class="nav-link" href="#contactUS">contact us</a>
+        </li>
+         <li class="nav-item">
+          <a style="font-size: 200%;color: #5c330a;" class="nav-link" href="#book_table">Book a Table</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br>
+
+<div class="container mt-5 pt-5">
+  <h2 class="text-center mb-4" data-aos="fade-up">-Place Your Order-</h2>
+  <div class="row">
+
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/1 (1).png" class="card-img-top" alt="Spaghetti Carbonara">
+        <div class="card-body text-center">
+          <h5 class="card-title" id="name1">Spaghetti Carbonara</h5>
+          <p class="card-text">$23</p>
+           <input id="num1" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note1" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button id="ptn1" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/1 (2).png" class="card-img-top" alt="Margherita Pizza">
+        <div class="card-body text-center">
+          <h5 class="card-title" id="name2">Margherita Pizza</h5>
+          <p class="card-text" >$99</p>
+           <input id="num2" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note2" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button id="ptm2" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/1 (3).png" class="card-img-top" alt="Osso Buco">
+        <div class="card-body text-center">
+          <h5 id="name3" class="card-title">Osso Buco</h5>
+          <p class="card-text">$71</p>
+           <input id="num3" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note3" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button id="ptm3" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/2.jpg" class="card-img-top" alt="Osso Buco">
+        <div class="card-body text-center">
+          <h5 id="name4" class="card-title">grain bowl</h5>
+          <p class="card-text">$36</p>
+           <input id="num4" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note4" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button id="ptm4" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/2(2).jpg" class="card-img-top" alt="Osso Buco">
+        <div class="card-body text-center">
+          <h5 class="card-title">cobb salad</h5>
+          <p class="card-text">$10</p>
+           <input id="num5" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note5" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button id="ptm5" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/2(3).jpg" class="card-img-top" alt="Osso Buco">
+        <div class="card-body text-center">
+          <h5 class="card-title">katsu</h5>
+          <p class="card-text" >$62</p>
+           <input id="num6" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note6" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button  id="ptm6" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/2(4).jpeg" class="card-img-top" alt="Osso Buco">
+        <div class="card-body text-center">
+          <h5 class="card-title">steak and fried rice</h5>
+          <p class="card-text">$87</p>
+           <input id="num7" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note7" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button id="ptm7" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card h-100 shadow-sm">
+        <img src="imgs/1 (4).png" class="card-img-top" alt="Arancini">
+        <div class="card-body text-center">
+          <h5 class="card-title">Arancini</h5>
+          <p class="card-text">$40</p>
+           <input id="num8" type="number" class="form-control mb-2" placeholder="Quantity" min="1" max="20">
+
+      <!-- حقل الملاحظات -->
+      <input id="note8" type="text" class="form-control mb-2" placeholder="Notes (extra cheese, no onion...)">
+
+
+
+          <button id="ptm8" dir="" class="btn btn-outline-dark">Add to the taple</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<br><br>
+<div class="container">
+<table class="table table-bordered table-striped text-center "style="width: 100%;" >
+      <thead class="table-dark">
+        <tr >
+          <th>الاسم</th>
+          <th>العدد</th>
+          <th>السعر ($)</th>
+          <th>المجموع ($)</th>
+           <th>الملاحظات</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+      </tbody>
+    </table>
+    <input id="subt" type="submit">
+</div>
+<br><br>
+<section>
+  <div class="container-fluid" style="background-color: #ebedf0; padding: 30px;"  data-aos="fade-up">
+    <div class="row">
+      <!-- النص -->
+      <div class="col-7 p-3 " id="aboutus" style="background-color: #ffffff; ">
+        <h2 style="font-size: 300%; margin: 30px; text-align: center;color:#5c330a ;">About Us</h2>
+        <h3>
+          Welcome to Zest, where we bring the authentic flavors of Italy right to your doorstep. Our passion for Italian cuisine drives us to create delicious dishes using traditional recipes and the freshest ingredients. Whether you're craving classic pasta, wood-fired pizza, or delectable desserts, Zest has something to satisfy every palate. Join us on a culinary journey through Italy and experience the zest of life with every bite!
+        </h3>
+      </div>
+      <!-- الصورة -->
+      <div class=" ab_img col-5 border rounded text-center">
+        <img src="imgs/apot us.png" alt="" class="img-fluid rounded mx-auto d-block" ">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container " id="book_table">
+  <h2 id="h1" style="text-align: center; font-size: 300%;"  data-aos="fade-up">-Book a Table-</h2>
+
+<div class="row">
+  <div class="col-7 my-4 mx-auto" data-aos="fade-up" >
+    <img src="imgs/book.png" alt="" >
+    <br><br>
+    <h2  style="font-size: 23px;">Opening Hours: <br></h2>
+    <h3 style="font-size: 16px;">Monday-Friday <br>11:00 AM - 09:00 PM</h3>
+    <h2 style="font-size: 23px;">Additional Info: <br></h2>
+    <h3 style="font-size: 16px;">Here you can add details that will be displayed for visitors on the reservation page, such as an explanation
+       about the restaurant, restaurant location, and other 
+      important information that you want to inform your visitors about.</h3>
+
+  </div>
+  <div id="book" class="col-5" style="background-color: #ffffff;" data-aos="fade-up">
+    <form action="https://google.com">
+      <br>
+      <label style=" margin: 10px;" for="size"> Choose Table Size</label><br>
+      <input id="size" type="number" min="1" max="10" class="form-control" style="margin: 10px;" >
+      <label  style="margin: 10px;" for="date">date</label>
+      <input id="date" type="date" class="form-control"  style="margin: 10px;"><br>
+      <label style="margin: 10px;" for="time">time</label>
+      <select size="4" class="form-control" name="time" id="time">
+        <option value="7:00am">7:00 am</option>
+          <option value="7:30 am">7:30 am</option> 
+        <option value="8:00am">8:00 am</option>
+          <option value="8:30 am">8:30 am</option> 
+        <option value="9:00 am">9:00 am</option>
+          <option value="9:30 am">9:30 am</option>      
+          <option value="10:00 am">10:00 am</option>
+          <option value="10:30 am">10:30 am</option>
+         <option value="11:00 am">11:00 am</option>
+          <option value="11:30 am">11:30 am</option>
+         <option value="12:00 am">12:00 am</option>
+          <option value="12:30 am">12:30 am</option>
+          <option value="13:00 am">13:00 am</option>
+      </select>
+      <br>
+      <input class="submit" type="submit">
+
+    </form>
+  </div>
+</div>
+</div>
+</section>
+
+<br><br>
+<section style="box-shadow: 0 5px 10px rgba(0,0,0,0.3) ;">
+  <div class="container">
+     <h2 id="h1" style="text-align: center; font-size: 300%;"  data-aos="fade-up">-contact us-</h2>
+    <div class="row">
+      <div class=" col-5 "id="contact" style="padding: 30px;">
+        <br>
+       
+        <h3 style="color: dimgrey; font-size: 20px;">Email</h3>
+        <a id="a" href="mailto:aosskotich7@gmail.com"><i class="fa fa-envelope"></i>aosskotich7@gmail.com</a><br>
+       
+        <p style="color: dimgrey; font-size: 20px;">phone</p>
+        <a id="a" href="tel:+963988930929">+963988930929</a>
+        <form action="">
+          <label for="name">name</label>
+          <input type="text"  class="form-control">
+           <label for="email">email address</label>
+          <input id="email" type="email"  class="form-control">
+           <label for="message">message</label>
+          <input id="message" type="text"  class="form-control"style="height: 100px;">
+          <input type="submit" name="submit" id="subt" style="width: 100% !important;">
+        </form>
+       
+
+      </div>
+      <div class=" col-7"> 
+        <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3276.158855046875!2d36.56630811021616!3d32.71750908860201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2s!4v1764002614831!5m2!1sar!2s" width="100%" height="100%" style="border:0; float:left ; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1200,  });
+</script>
+</body>
+</html>
