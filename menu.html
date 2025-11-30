@@ -13,13 +13,21 @@
 <script>
 $(document).ready(function(){
   $("#ptn1").click(function(){
+    
    let p=23;
     
               let n=$("#num1").val();
              let name="Spaghetti Carbonara";
               let note=$("#note1").val();
               let t=n*p;
+                              if (!n || n <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
+
                $("tbody").append("<tr><td>"+name+"</td><td>"+n+"</td><td>"+p+"</td><td>"+t+"</td><td>"+note+"</td></tr>");
+               $("#num1").val("");
+$("#note1").val("");
          
   });
    $("#ptm2").click(function(){
@@ -29,8 +37,13 @@ $(document).ready(function(){
              let name="Margherita Pizza";
               let note=$("#note2").val();
               let t2=n2*p;
+               if (!n2 || n2 <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
                $("tbody").append("<tr><td>"+name+"</td><td>"+n2+"</td><td>"+p+"</td><td>"+t2+"</td><td>"+note+"</td></tr>");
-         
+    $("#num2").val("");
+$("#note2").val("");     
   });
   $("#ptm3").click(function(){
    let p=71;
@@ -39,8 +52,13 @@ $(document).ready(function(){
              let name="Osso Buco";
               let note=$("#note3").val();
               let t3=n3*p;
+               if (!n3 || n3 <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
                $("tbody").append("<tr><td>"+name+"</td><td>"+n3+"</td><td>"+p+"</td><td>"+t3+"</td><td>"+note+"</td></tr>");
-         
+         $("#num3").val("");
+$("#note3").val("");
   });
    $("#ptm4").click(function(){
    let p=36;
@@ -49,8 +67,13 @@ $(document).ready(function(){
              let name="grain bowl";
               let note=$("#note4").val();
               let t4=n4*p;
+               if (!n4 || n4 <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
                $("tbody").append("<tr><td>"+name+"</td><td>"+n4+"</td><td>"+p+"</td><td>"+t4+"</td><td>"+note+"</td></tr>");
-         
+         $("#num4").val("");
+$("#note4").val("");
   });
   $("#ptm5").click(function(){
    let p=10;
@@ -59,8 +82,13 @@ $(document).ready(function(){
              let name="cobb salad";
               let note=$("#note5").val();
               let t5=n5*p;
+               if (!n5 || n5 <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
                $("tbody").append("<tr><td>"+name+"</td><td>"+n5+"</td><td>"+p+"</td><td>"+t5+"</td><td>"+note+"</td></tr>");
-         
+         $("#num5").val("");
+$("#note5").val("");
   });
   $("#ptm6").click(function(){
    let p=62;
@@ -69,8 +97,13 @@ $(document).ready(function(){
              let name="katsu";
               let note=$("#note6").val();
               let t6=n6*p;
+               if (!n6 || n6 <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
                $("tbody").append("<tr><td>"+name+"</td><td>"+n6+"</td><td>"+p+"</td><td>"+t6+"</td><td>"+note+"</td></tr>");
-         
+         $("#num6").val("");
+$("#note6").val("");
   });
    $("#ptm7").click(function(){
    let p=87;
@@ -79,8 +112,13 @@ $(document).ready(function(){
              let name="steak and fried rice";
               let note=$("#note7").val();
               let t7=n7*p;
+               if (!n7 || n7 <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
                $("tbody").append("<tr><td>"+name+"</td><td>"+n7+"</td><td>"+p+"</td><td>"+t7+"</td><td>"+note+"</td></tr>");
-         
+         $("#num7").val("");
+$("#note7").val("");
   });
    $("#ptm8").click(function(){
    let p=95;
@@ -89,11 +127,25 @@ $(document).ready(function(){
              let name="Arancini";
               let note=$("#note8").val();
               let t8=n8*p;
+               if (!n8 || n8 <= 0) { 
+                  alert("الرجاء إدخال عدد صحيح أكبر من صفر"); 
+                  return; 
+                }
                $("tbody").append("<tr><td>"+name+"</td><td>"+n8+"</td><td>"+p+"</td><td>"+t8+"</td><td>"+note+"</td></tr>");
-         
+         $("#num8").val("");
+$("#note8").val("");
+  });
+   $("#showOrders").click(function(){
+    $("#ordersModal").modal("show"); // يفتح النافذة المنبثقة
   });
 
+
 });
+
+
+
+
+
 
 </script>
 
@@ -125,6 +177,10 @@ $(document).ready(function(){
         </li>
          <li class="nav-item">
           <a style="font-size: 200%;color: #5c330a;" class="nav-link" href="#book_table">Book a Table</a>
+        </li>
+        <li>
+        <button id="showOrders" class="btn1 btn-primary">عرض الطلبات</button>
+
         </li>
       </ul>
     </div>
@@ -283,22 +339,37 @@ $(document).ready(function(){
   </div>
 </div>
 <br><br>
-<div class="container">
-<table class="table table-bordered table-striped text-center "style="width: 100%;" >
-      <thead class="table-dark">
-        <tr >
-          <th>الاسم</th>
-          <th>العدد</th>
-          <th>السعر ($)</th>
-          <th>المجموع ($)</th>
-           <th>الملاحظات</th>
-        </tr>
-      </thead>
-      <tbody>
-       
-      </tbody>
-    </table>
-    <input id="subt" type="submit">
+
+
+
+
+<div class="modal fade" id="ordersModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">قائمة الطلبات</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>الوجبة</th>
+              <th>العدد</th>
+              <th>السعر</th>
+              <th>المجموع</th>
+              <th>ملاحظات</th>
+               
+            </tr>
+          </thead>
+          <tbody>
+           
+          </tbody>
+        </table>
+         <input class="submittable" type="submit">
+      </div>
+    </div>
+  </div>
 </div>
 <br><br>
 <section>
