@@ -126,6 +126,11 @@ box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 
 
 
-
+@media (max-width: 576px) {
+  table td, table th {
+    font-size: 12px;
+    padding: 4px;
+  }
+}
 
   
